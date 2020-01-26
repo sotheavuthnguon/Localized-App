@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Localized App
+
+  Created by Sotheavuth Nguon on 1/26/20.
+  Copyright © 2020 Sotheavuth Nguon. All rights reserved.
+*/
+
+"Hello world" = "Привет";

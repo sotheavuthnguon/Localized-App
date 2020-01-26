@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		63628FB423DDC96100222B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63628FB223DDC96100222B14 /* Main.storyboard */; };
 		63628FB623DDC96200222B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63628FB523DDC96200222B14 /* Assets.xcassets */; };
 		63628FB923DDC96200222B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63628FB723DDC96200222B14 /* LaunchScreen.storyboard */; };
+		63628FC223DDCA0800222B14 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 63628FC123DDCA0800222B14 /* Localize_Swift */; };
+		63628FCB23DDCB5D00222B14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63628FCD23DDCB5D00222B14 /* Localizable.strings */; };
+		63628FD223DDCFBF00222B14 /* ButtonTitles.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63628FD423DDCFBF00222B14 /* ButtonTitles.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,14 @@
 		63628FB523DDC96200222B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63628FB823DDC96200222B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63628FBA23DDC96200222B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63628FCC23DDCB5D00222B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63628FCE23DDCB7500222B14 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63628FD323DDCFBF00222B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ButtonTitles.strings; sourceTree = "<group>"; };
+		63628FD523DDCFC300222B14 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ButtonTitles.strings; sourceTree = "<group>"; };
+		63628FD623DDD10E00222B14 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63628FD723DDD10E00222B14 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/ButtonTitles.strings; sourceTree = "<group>"; };
+		63628FD823DDD32200222B14 /* km */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = km; path = km.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63628FD923DDD32200222B14 /* km */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = km; path = km.lproj/ButtonTitles.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63628FC223DDCA0800222B14 /* Localize_Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				63628FAC23DDC96100222B14 /* AppDelegate.swift */,
+				63628FD123DDCFB000222B14 /* Resources */,
 				63628FAE23DDC96100222B14 /* SceneDelegate.swift */,
 				63628FB023DDC96100222B14 /* ViewController.swift */,
 				63628FB223DDC96100222B14 /* Main.storyboard */,
@@ -65,6 +78,15 @@
 				63628FBA23DDC96200222B14 /* Info.plist */,
 			);
 			path = "Localized App";
+			sourceTree = "<group>";
+		};
+		63628FD123DDCFB000222B14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63628FCD23DDCB5D00222B14 /* Localizable.strings */,
+				63628FD423DDCFBF00222B14 /* ButtonTitles.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = "Localized App";
+			packageProductDependencies = (
+				63628FC123DDCA0800222B14 /* Localize_Swift */,
+			);
 			productName = "Localized App";
 			productReference = 63628FA923DDC96100222B14 /* Localized App.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +134,14 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				fr,
+				km,
 			);
 			mainGroup = 63628FA023DDC96100222B14;
+			packageReferences = (
+				63628FC023DDCA0800222B14 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
+			);
 			productRefGroup = 63628FAA23DDC96100222B14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63628FB923DDC96200222B14 /* LaunchScreen.storyboard in Resources */,
+				63628FCB23DDCB5D00222B14 /* Localizable.strings in Resources */,
+				63628FD223DDCFBF00222B14 /* ButtonTitles.strings in Resources */,
 				63628FB623DDC96200222B14 /* Assets.xcassets in Resources */,
 				63628FB423DDC96100222B14 /* Main.storyboard in Resources */,
 			);
@@ -163,6 +196,28 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		63628FCD23DDCB5D00222B14 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63628FCC23DDCB5D00222B14 /* en */,
+				63628FCE23DDCB7500222B14 /* ru */,
+				63628FD623DDD10E00222B14 /* fr */,
+				63628FD823DDD32200222B14 /* km */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		63628FD423DDCFBF00222B14 /* ButtonTitles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63628FD323DDCFBF00222B14 /* en */,
+				63628FD523DDCFC300222B14 /* ru */,
+				63628FD723DDD10E00222B14 /* fr */,
+				63628FD923DDD32200222B14 /* km */,
+			);
+			name = ButtonTitles.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -170,6 +225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -284,6 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ML3V5A498;
 				INFOPLIST_FILE = "Localized App/Info.plist";
@@ -293,6 +351,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sotheavuthnguon.Localized-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ML3V5A498;
 				INFOPLIST_FILE = "Localized App/Info.plist";
@@ -311,6 +371,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sotheavuthnguon.Localized-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63628FC023DDCA0800222B14 /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63628FC123DDCA0800222B14 /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63628FC023DDCA0800222B14 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63628FA123DDC96100222B14 /* Project object */;
 }
